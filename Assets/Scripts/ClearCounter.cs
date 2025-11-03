@@ -4,13 +4,22 @@ using UnityEngine;
 public class ClearCounter : BaseCounter
 {
     [SerializeField] KitchenObjectSO kitchenObjectSO;
-    [SerializeField] Transform counterTopPoint;
-    
-    KitchenObject kitchenObject;
 
     
     public override void Interact(Player player){
-        Debug.Log("Interact");
+        if(!HasKitchenObject()){
+            if(player.HasKitchenObject()){
+                player.GetKitchenObject().SetKitchenObjectParent(this);
+            }else{
+                
+            }
+        }else{
+            if(player.HasKitchenObject()){
+                
+            }else{
+                GetKitchenObject().SetKitchenObjectParent(player);
+            }
+        }
         
     }
     
