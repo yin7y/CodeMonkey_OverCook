@@ -12,6 +12,7 @@ public class PlatesCounterVisual : MonoBehaviour
     [SerializeField] Transform plateVisualPrefab;
     
     List<GameObject> plateVisualGameObjectList;
+    
     void Awake(){
         plateVisualGameObjectList = new List<GameObject>();
     }
