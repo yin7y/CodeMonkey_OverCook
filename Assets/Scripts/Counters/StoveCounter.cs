@@ -118,6 +118,11 @@ public class StoveCounter : BaseCounter, IHasProgress
             // 持有東西
             if(player.HasKitchenObject()){
                 // Player 有拿東西
+                if(player.GetKitchenObject().TryGetPlate(out PlateKitchenObject plateKitchenObject)){
+                    if(plateKitchenObject.TryAddIngredient(GetKitchenObject().GetKitchenObjectSO())){
+                        GetKitchenObject().DestroySelf();
+                    }
+                }
             }else{
                 // Player 沒拿東西
                 GetKitchenObject().SetKitchenObjectParent(player);
