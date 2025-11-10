@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentVersion: 1.01
   subtype: kitchenchaos
-  lastShownTimestamp: 1762398517
+  lastShownTimestamp: 1762742534
   lastUpdateResponse:
     version: 1.01
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1762398517
+  checkedLastUpdateTimestamp: 1762742534
   lastQOTDResponse:
     questionId: 238
     questionText: Where is the modulo % operator particularly useful?
@@ -27,18 +27,18 @@ MonoBehaviour:
     answerC: Creating a new list with size
     answerD: 
     answerE: 
-  lastQotdTimestamp: 1762398517
+  lastQotdTimestamp: 1762742534
   lastDynamicHeaderResponse:
     topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/gameDevReport_2.png
     topText: Stay up to date with the latest in Game Dev straight to your inbox!
     topLink: gamedevreport
     bottomText: My 10+ Years of C# Knowledge in 1 Course!
     bottomLink: csharpcourse
-  lastDynamicHeaderTimestamp: 1762398517
+  lastDynamicHeaderTimestamp: 1762742534
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
       Click here!</a>
-  websiteLatestMessageTimestamp: 1762398517
+  websiteLatestMessageTimestamp: 1762742534
   websiteLatestVideos:
     videos:
     - youTubeId: slMe3sbS_KM
@@ -49,4 +49,4 @@ MonoBehaviour:
       title: How do you REFACTOR code? (EXTREMELY Important!)
     - youTubeId: g8RbZ8ymWas
       title: 7 SPOOKY Game Dev MYTHs that aren't REAL!
-  websiteLatestVideosTimestamp: 1762398517
+  websiteLatestVideosTimestamp: 1762742534
