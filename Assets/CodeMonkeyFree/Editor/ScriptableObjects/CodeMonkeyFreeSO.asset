@@ -14,39 +14,44 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentVersion: 1.01
   subtype: kitchenchaos
-  lastShownTimestamp: 1762742534
+  lastShownTimestamp: 1763011628
   lastUpdateResponse:
     version: 1.01
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1762742534
+  checkedLastUpdateTimestamp: 1763011628
   lastQOTDResponse:
-    questionId: 238
-    questionText: Where is the modulo % operator particularly useful?
-    answerA: Looping back on a list
-    answerB: Counting elements in a list
-    answerC: Creating a new list with size
+    questionId: 241
+    questionText: 'What is the result of this code:
+
+      <p>int money = 2000000000;
+      // $2 billion</p>
+
+      <p>money += 1000000000; // Adding $1 billion</p>'
+    answerA: money == 3000000000
+    answerB: money == -1294967296
+    answerC: money == 0
     answerD: 
     answerE: 
-  lastQotdTimestamp: 1762742534
+  lastQotdTimestamp: 1763011628
   lastDynamicHeaderResponse:
-    topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/gameDevReport_2.png
-    topText: Stay up to date with the latest in Game Dev straight to your inbox!
-    topLink: gamedevreport
+    topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/cmBlackFriday2025.png
+    topText: Get my BLACK FRIDAY Bundle! Available now with Live Chat!
+    topLink: blackfriday
     bottomText: My 10+ Years of C# Knowledge in 1 Course!
     bottomLink: csharpcourse
-  lastDynamicHeaderTimestamp: 1762742534
+  lastDynamicHeaderTimestamp: 1763011628
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
       Click here!</a>
-  websiteLatestMessageTimestamp: 1762742534
+  websiteLatestMessageTimestamp: 1763011628
   websiteLatestVideos:
     videos:
-    - youTubeId: slMe3sbS_KM
-      title: What is Unity Studio?
-    - youTubeId: mtNIuwGDYUc
-      title: Do GAMERS Like Pixel Art?
-    - youTubeId: SFVSgORBgOg
-      title: How do you REFACTOR code? (EXTREMELY Important!)
-    - youTubeId: g8RbZ8ymWas
-      title: 7 SPOOKY Game Dev MYTHs that aren't REAL!
-  websiteLatestVideosTimestamp: 1762742534
+    - youTubeId: zbGWwfEhTzc
+      title: I wrote 3000 lines of code in 48 HOURS!
+    - youTubeId: HSLVMh25YWo
+      title: BLACK FRIDAY Bundle Available NOW! Learn and Play!
+    - youTubeId: Gl0leX7gqVA
+      title: Dispelling the Unity looks bad MYTH!
+    - youTubeId: 0zljaBBiOXo
+      title: Unity turns 20! Get FREE Assets and Make Games!
+  websiteLatestVideosTimestamp: 1763011628
