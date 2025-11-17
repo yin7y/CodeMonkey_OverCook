@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentVersion: 1.01
   subtype: kitchenchaos
-  lastShownTimestamp: 1763276372
+  lastShownTimestamp: 1763362896
   lastUpdateResponse:
     version: 1.01
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1763276372
+  checkedLastUpdateTimestamp: 1763362896
   lastQOTDResponse:
     questionId: 242
     questionText: What is the main difference between the out and ref keywords? (behaviour
@@ -28,18 +28,18 @@ MonoBehaviour:
     answerC: No difference
     answerD: 
     answerE: 
-  lastQotdTimestamp: 1763276372
+  lastQotdTimestamp: 1763362896
   lastDynamicHeaderResponse:
     topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/cmBlackFriday2025.png
     topText: Get my BLACK FRIDAY Bundle! Available now with Live Chat!
     topLink: blackfriday
     bottomText: My 10+ Years of C# Knowledge in 1 Course!
     bottomLink: csharpcourse
-  lastDynamicHeaderTimestamp: 1763276372
+  lastDynamicHeaderTimestamp: 1763362896
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
       Click here!</a>
-  websiteLatestMessageTimestamp: 1763276372
+  websiteLatestMessageTimestamp: 1763362896
   websiteLatestVideos:
     videos:
     - youTubeId: mhKXu9zPWYM
@@ -50,4 +50,4 @@ MonoBehaviour:
       title: I wrote 3000 lines of code in 48 HOURS!
     - youTubeId: HSLVMh25YWo
       title: BLACK FRIDAY Bundle Available NOW! Learn and Play!
-  websiteLatestVideosTimestamp: 1763276372
+  websiteLatestVideosTimestamp: 1763362896

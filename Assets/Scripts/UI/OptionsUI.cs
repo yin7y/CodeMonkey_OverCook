@@ -1,0 +1,107 @@
+using System;
+using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class OptionsUI : MonoBehaviour
+{
+    public static OptionsUI Instance { get; private set;}
+    
+    [SerializeField] Button soundEffectsButton;
+    [SerializeField] Button musicButton;
+    [SerializeField] Button closeButton;
+    [SerializeField] TextMeshProUGUI soundEffectsText;
+    [SerializeField] TextMeshProUGUI musicText;
+    
+    [SerializeField] Button moveUpButton;
+    [SerializeField] Button moveDownButton;
+    [SerializeField] Button moveLeftButton;
+    [SerializeField] Button moveRightButton;
+    [SerializeField] Button interactButton;
+    [SerializeField] Button interactAlternatButton;
+    [SerializeField] Button pauseButton;
+    [SerializeField] TextMeshProUGUI moveUpText;
+    [SerializeField] TextMeshProUGUI moveDownText;
+    [SerializeField] TextMeshProUGUI moveLeftText;
+    [SerializeField] TextMeshProUGUI moveRightText;
+    [SerializeField] TextMeshProUGUI interactText;
+    [SerializeField] TextMeshProUGUI interactAlternateText;
+    [SerializeField] TextMeshProUGUI pauseText;
+    
+    [SerializeField] Transform pressToRebindKeyTransform;
+    
+    void Awake(){
+        Instance = this;
+        
+        soundEffectsButton.onClick.AddListener(() => {
+            SoundManager.Instance.ChangeVolume();
+            UpdateVisual();
+        });
+        musicButton.onClick.AddListener(() => {
+            MusicManager.Instance.ChangeVolume();
+            UpdateVisual();
+        });
+        closeButton.onClick.AddListener(() => {
+            Hide();
+        });
+        
+        moveUpButton.onClick.AddListener(() => { RebindBinding(GameInput.Binding.Move_Up); });
+        moveDownButton.onClick.AddListener(() => { RebindBinding(GameInput.Binding.Move_Down); });
+        moveLeftButton.onClick.AddListener(() => { RebindBinding(GameInput.Binding.Move_Left); });
+        moveRightButton.onClick.AddListener(() => { RebindBinding(GameInput.Binding.Move_Right); });
+        interactButton.onClick.AddListener(() => { RebindBinding(GameInput.Binding.Interact); });
+        interactAlternatButton.onClick.AddListener(() => { RebindBinding(GameInput.Binding.InteractAlternate); });
+        pauseButton.onClick.AddListener(() => { RebindBinding(GameInput.Binding.Pause); });
+    }
+    
+    void Start(){
+        KitchenGameManager.Instance.OnGameUnpaused += KitchenGameManager_OnGameUnpaused;
+        
+        UpdateVisual();
+        
+        HidePressToRebindKey();
+        Hide();
+    }
+
+    private void KitchenGameManager_OnGameUnpaused(object sender, EventArgs e){
+        Hide();
+    }
+
+    void UpdateVisual(){
+        soundEffectsText.text = "Sound Effects: " + Mathf.Round(SoundManager.Instance.GetVolume() * 10f);
+        musicText.text = "Music: " + Mathf.Round(MusicManager.Instance.GetVolume() * 10f);
+        
+        moveUpText.text = GameInput.Instance.GetBindingText(GameInput.Binding.Move_Up);
+        moveDownText.text = GameInput.Instance.GetBindingText(GameInput.Binding.Move_Down);
+        moveLeftText.text = GameInput.Instance.GetBindingText(GameInput.Binding.Move_Left);
+        moveRightText.text = GameInput.Instance.GetBindingText(GameInput.Binding.Move_Right);
+        interactText.text = GameInput.Instance.GetBindingText(GameInput.Binding.Interact);
+        interactAlternateText.text = GameInput.Instance.GetBindingText(GameInput.Binding.InteractAlternate);
+        pauseText.text = GameInput.Instance.GetBindingText(GameInput.Binding.Pause);
+    }
+    
+    public void Show(){
+        gameObject.SetActive(true);
+    }
+    
+    void Hide(){
+        gameObject.SetActive(false);
+    }
+    
+    void ShowPressToRebindKey(){
+        pressToRebindKeyTransform.gameObject.SetActive(true);
+    }
+    
+    void HidePressToRebindKey(){
+        pressToRebindKeyTransform.gameObject.SetActive(false);
+    }
+    
+    void RebindBinding(GameInput.Binding binding){
+        ShowPressToRebindKey();
+        
+        GameInput.Instance.RebindBinding(binding, () => {
+            HidePressToRebindKey();
+            UpdateVisual();
+        });
+    }
+}
