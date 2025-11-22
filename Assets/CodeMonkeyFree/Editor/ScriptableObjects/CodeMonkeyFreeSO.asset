@@ -14,40 +14,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentVersion: 1.01
   subtype: kitchenchaos
-  lastShownTimestamp: 1763362896
+  lastShownTimestamp: 1763736236
   lastUpdateResponse:
     version: 1.01
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1763362896
+  checkedLastUpdateTimestamp: 1763736236
   lastQOTDResponse:
-    questionId: 242
-    questionText: What is the main difference between the out and ref keywords? (behaviour
-      inside the function)
-    answerA: out doesn't need to be set; ref MUST be set
-    answerB: out MUST be set; ref doesn't need to be set
-    answerC: No difference
+    questionId: 244
+    questionText: What will happen on January 19, 2038 at 03:14:07?
+    answerA: Armagedon
+    answerB: End of Unix Time
+    answerC: Half-Life 3 release date
     answerD: 
     answerE: 
-  lastQotdTimestamp: 1763362896
+  lastQotdTimestamp: 1763736236
   lastDynamicHeaderResponse:
     topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/cmBlackFriday2025.png
     topText: Get my BLACK FRIDAY Bundle! Available now with Live Chat!
     topLink: blackfriday
     bottomText: My 10+ Years of C# Knowledge in 1 Course!
     bottomLink: csharpcourse
-  lastDynamicHeaderTimestamp: 1763362896
+  lastDynamicHeaderTimestamp: 1763736236
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
       Click here!</a>
-  websiteLatestMessageTimestamp: 1763362896
+  websiteLatestMessageTimestamp: 1763736236
   websiteLatestVideos:
     videos:
+    - youTubeId: vB0ApsVWET8
+      title: The BIGGEST Unity Sale of the YEAR! (BLACK FRIDAY 95% OFF!)
+    - youTubeId: abYJvA6IchM
+      title: Avoid these Beginner C# MISTAKES! (Code Review)
     - youTubeId: mhKXu9zPWYM
       title: TOP 10 FREE NEW Assets NOVEMBER 2025!
     - youTubeId: qOhIk8Z-jRc
       title: How to make a Live Chat! (Unity, PHP, SQL, JavaScript)
-    - youTubeId: zbGWwfEhTzc
-      title: I wrote 3000 lines of code in 48 HOURS!
-    - youTubeId: HSLVMh25YWo
-      title: BLACK FRIDAY Bundle Available NOW! Learn and Play!
-  websiteLatestVideosTimestamp: 1763362896
+  websiteLatestVideosTimestamp: 1763736236

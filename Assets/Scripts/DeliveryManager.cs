@@ -20,7 +20,6 @@ public class DeliveryManager : MonoBehaviour
     int waitingRecipesMax = 4;
     int successfulRecipesAmount;
     
-    
     void Awake(){
         Instance = this;
         
